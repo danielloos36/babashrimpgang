@@ -313,7 +313,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
-    width: 1000px;
+    width: 1200px;
 }
 
 .spotify h3 {
@@ -526,6 +526,10 @@ textarea {
     box-sizing: border-box;
 }
 
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
 .form-check {
     display: inline-block;
     margin-top: 15px;
@@ -537,6 +541,7 @@ textarea {
     display: inline-block;
     position: absolute;
     margin-top: 12px;
+    color: black;
 }
 
 .form-check-label {
@@ -624,6 +629,22 @@ ul.footer-content {
     font-size: 1.5rem;
 }
 
+.konzerttermine-vergangen {
+    position: relative;
+    text-align: center;
+    margin-top: 91px;
+}
+
+.konzerttermine-vergangen li {
+    list-style: none;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.konzerttermine-vergangen .ul-parent ul {
+    padding: 0;
+}
+
 .kk {
     position: absolute;
     right: -186px;
@@ -641,9 +662,9 @@ ul.footer-content {
 .teppich {
     position: absolute;
     left: 51%;
-    transform: translateX(-50%);
-    bottom: -191px;
-    width: 100%;
+    transform: translateX(-50%) rotate(1deg);
+    bottom: -148px;
+    width: 83vw;
     z-index: -1;
 }
 
@@ -653,6 +674,16 @@ ul.footer-content {
     transform: translateX(-50%);
     position: relative;
     width: 1200px;
+}
+
+#datenschutz h2 {
+    font-family: alata, arial;
+    font-size: 2.5rem;
+}
+
+#datenschutz h3 {
+    font-family: alata, arial;
+    font-size: 2.3rem;
 }
 
 .impressum h1, .datenschutz h1 {
@@ -672,14 +703,48 @@ ul.footer-content {
     .releases {
         margin-top: 170px;
     }
-    .spotify {
-        width: 1200px;
-    }
     input {
         height: 60px;
     }
     textarea {
         height: 140px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .spotify {
+        width: 90vw;
+    }
+    
+    .box-1 {
+        width: 40vw;
+        height: 40vw;
+        margin-right: 10px;
+    }
+    
+    .box-2 {
+        width: 40vw;
+        height: 40vw;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 990px ) {
+    .spotify {
+        flex-wrap: wrap;
+    }
+    .box-1 {
+        width: 75vw;
+        height: 75vw;
+        margin-bottom: 40px;
+    }
+    .box-2 {
+        width: 75vw;
+        height: 75vw;
+    }
+    .spotify img {
+        width: 60vw;
+        height: 30vw;
     }
 }
 
@@ -689,12 +754,31 @@ ul.footer-content {
     p {
         font-size: 1.4rem;
     }
+    h2 {
+        font-size: 2.6rem;
+    }
+    h3 {
+        font-size: 2.3rem;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    input {
+        font-size: 1.2rem;
+    }
     .page-width {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .konzerttermine-vergangen li {
+        font-size: 1.4rem;
+    }
+    .releases h2 {
+        margin-bottom: 0;
+    }
     .bsg-logo {
         width: 249px;
+        height: 39px;
     }
     .hero-image img {
         width: 500px;
@@ -778,12 +862,12 @@ ul.footer-content {
     .social-typ {
         position: absolute;
         width: 173px;
-        top: 20px;
+        top: -26px;
         right: -117px;
     }
     .teppich {
-        bottom: -128px;
-        width: 387px;    
+        bottom: -138px;
+        width: 442px; 
     }
     .input {
         font-size: 1rem !important;
