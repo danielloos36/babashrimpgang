@@ -459,6 +459,20 @@ a:hover {
     z-index: 0;
 }
 
+.scheinwerfer-rot {
+    position: absolute;
+    top: 14px;
+    right: 4vw;
+    width: 614px;
+}
+
+.scheinwerfer-gelb {
+    position: absolute;
+    top: 47px;
+    left: 4vw;
+    width: 572px;
+}
+
 .kontaktformular {
     position: relative;
     margin-top: 130px;
@@ -669,11 +683,12 @@ ul.footer-content {
 }
 
 #datenschutz, #impressum {
-    margin-top: 50px;
+    margin-top: 120px;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
+    padding: 10px 8%;
 }
 
 #datenschutz h2 {
@@ -715,17 +730,23 @@ ul.footer-content {
     .spotify {
         width: 90vw;
     }
-    
+    .lampe {
+        position: absolute;
+        left: 59vw;
+        top: 62px;
+        width: 500px;
+    }
     .box-1 {
         width: 40vw;
         height: 40vw;
+        margin-left: 10px;
         margin-right: 10px;
     }
-    
     .box-2 {
         width: 40vw;
         height: 40vw;
         margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -738,6 +759,18 @@ ul.footer-content {
         height: 75vw;
         margin-bottom: 40px;
     }
+    .lampe {
+        position: absolute;
+        right: -60px;
+        top: 85px;
+        width: 400px;
+    }
+    .amp {
+        position: absolute;
+        bottom: 45px;
+        left: 24px;
+        width: 833px;
+    }
     .box-2 {
         width: 75vw;
         height: 75vw;
@@ -745,6 +778,27 @@ ul.footer-content {
     .spotify img {
         width: 60vw;
         height: 30vw;
+    }
+    .scheinwerfer-rot {
+        top: -3px;
+        right: -15vw;
+        width: 614px;    
+    }
+    .scheinwerfer-gelb {
+        top: 47px;
+        left: -15vw;
+        width: 539px;
+    }
+    .hero-image img {
+        width: 954px;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    .ueber-uns {
+        padding-top: 99px;
+        padding-bottom: 182px;
     }
 }
 
@@ -776,9 +830,29 @@ ul.footer-content {
     .releases h2 {
         margin-bottom: 0;
     }
+    .icons {
+        width: 70%;
+    }
+    .footer-content li {
+        display: block;
+        margin: 16px 10px;
+    }
     .bsg-logo {
         width: 249px;
         height: 39px;
+    }
+    #datenschutz, #impressum {
+        margin-top: 76px;
+    }
+    .scheinwerfer-rot {
+        top: 19px;
+        right: -17vw;
+        width: 367px;
+    }
+    .scheinwerfer-gelb {
+        top: 53px;
+        left: -17vw;
+        width: 309px;    
     }
     .hero-image img {
         width: 500px;
@@ -796,14 +870,15 @@ ul.footer-content {
         margin-top: 20px;
     }
     .lampe {
-        right: -140px;
-        top: 40px;
-        width: 90%;
+        right: -115px;
+        top: 42px;
+        width: 355px;
     }
     .amp {
         position: absolute;
-        bottom: 53px;
-        width: 784px;
+        bottom: 54px;
+        width: 704px;
+        left: 5px;
     }
     .slick-prev {
         left: 7px;
@@ -816,10 +891,11 @@ ul.footer-content {
         height: 90vw;
     }
     .ueber-uns {
-        padding-top: 30px;
+        padding-top: 59px;
     }
     .releases {
         margin-top: 0;
+        margin-bottom: 78px;
     }
     .releases .btn {
         margin: 0;
@@ -864,6 +940,9 @@ ul.footer-content {
         width: 173px;
         top: -26px;
         right: -117px;
+    }
+    .slider {
+        margin-top: 10px;
     }
     .teppich {
         bottom: -138px;
