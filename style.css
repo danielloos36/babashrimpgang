@@ -266,6 +266,8 @@ a:hover {
     position: absolute;
     right: 0;
     top: 0;
+    transform: rotate(4deg);
+    transform-origin: top center;
 }
 
 .amp {
@@ -870,7 +872,7 @@ ul.footer-content {
         margin-top: 20px;
     }
     .lampe {
-        right: -115px;
+        left: 53vw;
         top: 42px;
         width: 355px;
     }
