@@ -30,6 +30,28 @@ function burgerIcons() {
     document.getElementsByClassName("bar3")[0].classList.remove("change");
 }
 
+/*
+      www.dakitec.de - Cookie Banner
+      https://dakitec.de/blog/cookie-banner-selbst-erstellen
+      Dieses Skript zeigt den Banner an, wenn er noch nicht bestätigt wurde
+    */
+      var footerCookie = document.querySelector("#footer-cookie");
+      var footerCookieAccept = document.querySelector("#accept");
+  
+      if (document.cookie.indexOf("dakitecCookieBanner=") == -1) {
+        footerCookie.style.display = "block";
+      }
+  
+      footerCookieAccept.onclick = function(e) {
+        var cookieDate = new Date();
+        cookieDate.setTime(new Date().getTime() + 31104000000);
+  
+        document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+  
+        footerCookie.style.display = "none";
+      };
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 tl = gsap.timeline({
@@ -44,14 +66,35 @@ tl = gsap.timeline({
     rotation: -4,
     duration: 1.5,
     transformOrigin: "top center",
-    ease:"power3"
+    ease: Power3. easeInOut,  
   },);
   tl.to(".lampe", {
     rotation: 4,
     duration: 1.5,
     transformOrigin: "top center",
-    ease:"power3"
+    ease: Power3. easeInOut,  
   },);
+
+  tl = gsap.timeline({
+    scrollTrigger: { 
+      trigger: '.ueber-uns-page',
+      toggleActions: 'play none none reverse',
+      start: 'top bottom'
+    },
+    repeat: -1
+    },);
+    tl.to(".lampe", {
+      rotation: -4,
+      duration: 1.5,
+      transformOrigin: "top center",
+      ease: Power3. easeInOut,  
+    },);
+    tl.to(".lampe", {
+      rotation: 4,
+      duration: 1.5,
+      transformOrigin: "top center",
+      ease: Power3. easeInOut,  
+    },);
 
   tl = gsap.timeline({
     scrollTrigger: { 
@@ -79,3 +122,6 @@ tl = gsap.timeline({
         transformOrigin: "center",
         ease: "none"
       },);
+
+
+
