@@ -54,6 +54,16 @@ function burgerIcons() {
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.to(".icons", {
+  scrollTrigger: { 
+    trigger: '.footer',
+    toggleActions: 'play complet reset reset',
+    start: 'top bottom'
+  },
+    duration: 0.1,
+    fill: 'white'
+  },);
+
 tl = gsap.timeline({
   scrollTrigger: { 
     trigger: '.ueber-uns',

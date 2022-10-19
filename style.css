@@ -278,6 +278,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .myButton {
@@ -470,6 +471,7 @@ a:hover {
     top: 14px;
     right: 4vw;
     width: 614px;
+    z-index: -1;
 }
 
 .scheinwerfer-gelb {
@@ -477,6 +479,7 @@ a:hover {
     top: 47px;
     left: 4vw;
     width: 572px;
+    z-index: -1;
 }
 
 .kontaktformular {
@@ -833,12 +836,24 @@ ul.footer-content {
     .konzerttermine-vergangen li {
         font-size: 1.4rem;
     }
+    .konzerttermine-vergangen {
+        overflow-x: hidden;
+    }
+    .ueber-uns {
+        overflow-x: hidden;
+    }
     .releases h2 {
         margin-bottom: 0;
     }
     .icons {
         width: 70%;
         margin: 2px 0;
+    }
+    .kk {
+        display: none;
+    }
+    .vwl {
+        display: none;
     }
     .footer-content li {
         display: block;
@@ -850,6 +865,9 @@ ul.footer-content {
     }
     #datenschutz, #impressum {
         margin-top: 76px;
+    }
+    #datenschutz h1, #impressum h1{
+        font-size: 3rem;
     }
     .scheinwerfer-rot {
         top: 19px;
@@ -929,8 +947,8 @@ ul.footer-content {
         color: black;
         position: relative;
         text-align: center;
-        margin: 0;
-        width: 100%;
+        margin: 0; 
+        width: 99%;
     }
     .konzerttermine ul {
         flex-basis: 100%;
@@ -953,7 +971,11 @@ ul.footer-content {
     }
     .teppich {
         bottom: -138px;
-        width: 442px; 
+        width: 442px;
+    }
+    .overflow {
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     .input {
         font-size: 1rem !important;
