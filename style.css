@@ -859,6 +859,9 @@ ul.footer-content {
         display: block;
         margin: 16px 10px;
     }
+    .pagelinks {
+        padding: 16px 0 !important;
+    }
     .bsg-logo {
         width: 249px;
         height: 39px;
