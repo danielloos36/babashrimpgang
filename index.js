@@ -1,12 +1,12 @@
 function myFunction() {
 var x = document.getElementById("navbar-collapsed");
-if (x.style.top === "0px") {
+if (x.style.top === "-20vh") {
   x.style.top = "3000px";
   document.getElementsByClassName("icons")[0].style.fill = "black";
   document.getElementsByClassName("icons")[1].style.fill = "black";
   document.getElementsByClassName("icons")[2].style.fill = "black";
 } else {
-  x.style.top = "0px";
+  x.style.top = "-20vh";
   document.getElementsByClassName("icons")[0].style.fill = "white";
   document.getElementsByClassName("icons")[1].style.fill = "white";
   document.getElementsByClassName("icons")[2].style.fill = "white";

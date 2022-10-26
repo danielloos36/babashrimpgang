@@ -156,13 +156,14 @@ h3 {
 
 #navbar-collapsed {
     background-color: black;
-    width: 100vw;
-    height: 100vh;
+    width: 120vw;
+    height: 140vh;
     z-index: 20;
+    overflow: hidden;
     text-align: center;
     position: fixed;
     top: 3000px;
-    left: 0px;
+    left: -10vw;
     right: 0px;
     bottom: 0px;
     margin: 0;
@@ -174,7 +175,7 @@ h3 {
   padding: 15px 16px;
   text-decoration: none;
   font-family: "phosphaterrsoliduploaded_file", "arial";
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   display: block;
 }
 
@@ -204,6 +205,11 @@ h3 {
 
 .active {
   color: white;
+}
+
+.form-button .myButton {
+    width: inherit !important;
+    border-radius: 0;
 }
 
 .item h3{
@@ -289,6 +295,7 @@ a:hover {
 	font-family:Arial;
 	font-size:22px;
 	padding:15px 40px;
+    border-radius: 0;
 	text-decoration: none;
     position: relative;
     z-index: 2;
