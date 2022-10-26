@@ -570,7 +570,7 @@ textarea {
     height: 50px;
     display: inline-block;
     position: absolute;
-    margin-top: 12px;
+    margin-top: -6px;
     color: black;
 }
 
@@ -722,6 +722,10 @@ ul.footer-content {
     margin-bottom: 130px;
 }
 
+label a {
+    text-decoration: underline;
+}
+
 /* RESPONSIVNESS WIDESCREEN*/
 
 @media (min-width: 1600px) {
@@ -835,6 +839,10 @@ ul.footer-content {
     }
     input {
         font-size: 1.2rem;
+        margin: 5px 0 19px;
+    }
+    .form-button {
+        margin-top: 20px !important;
     }
     .page-width {
         padding-left: 30px;
